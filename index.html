@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trains</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="ui large container">
+        <h1 class="ui orange center aligned header">
+            All Aboard!
+        </h1>
+        <h3 class="ui orange inverted top attached header">
+            Train Schedule
+        </h3>
+        <div class="ui attached segment">
+            <p>
+
+                <table class="ui celled table">
+                    <thead>
+                        <tr>
+                            <th>Train Time</th>
+                            <th>Destination</th>
+                            <th>First Train Time</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Train Time">
+                                <p id="trainTime"></p>
+                            <td data-label="Destination">
+                                <p id="arrival"></p>
+                            <td data-label="First Train Time">
+                                <p id="firstTrain"></p>
+                            <td data-label="Frequency">
+                                <p id="howOften"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                    </tbody>
+                </table>
+            </p>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="ui container">
+        <h3 class="ui orange inverted top attached header">
+            Add Train
+        </h3>
+        <div class="ui attached segment">
+            <p>
+                <form class="ui form">
+                    <div class="field">
+                        <label>Train Name</label>
+                        <input type="text" name="train-name" placeholder="">
+                    </div>
+                    <div class="field">
+                        <label>Destination</label>
+                        <input type="text" name="destination" placeholder="">
+                    </div>
+                    <div class="field">
+                        <label>First Train Time (HH:mm-military time) </label>
+                        <input type="text" name="first-train-time" placeholder="">
+                    </div>
+                    <div class="field">
+                        <label>Frequency (min)</label>
+                        <input type="text" name="frequency" placeholder="">
+                    </div>
+                    <button class="ui blue button" type="submit">Submit</button>
+                </form>
+            </p>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/app.js"></script>
+
+    <!-- //post the information in firebase
+
+
+    //put the information in a table
+
+-->
+
+
+</body>
+
+</html>
